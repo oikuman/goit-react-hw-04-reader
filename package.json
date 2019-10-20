@@ -1,0 +1,50 @@
+{
+  "name": "goit-react-hw-04-reader",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "qs": "^6.9.0",
+    "query-string": "^6.8.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint src/**/*.js",
+    "lint:fix": "eslint src/**/*.js --fix",
+    "lint:format": "prettier src/**/*.{js,css,json} --write"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [],
+  "author": "oikuman <oikuma@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {},
+  "homepage": "https://oikuman.github.io/goit-react-hw-04-reader",
+  "repository": "git+https://github.com/oikuman/goit-react-hw-04-reader.git",
+  "bugs": {
+    "url": "https://github.com/oikuman/goit-react-hw-04-reader/issues"
+  }
+}
