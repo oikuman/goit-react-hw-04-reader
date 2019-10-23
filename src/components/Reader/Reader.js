@@ -58,11 +58,14 @@ class Reader extends Component {
 
   render() {
     const { index, articles } = this.state;
-    const { location } = this.props;
-    console.log(location);
+    const { location, history } = this.props;
+
     const searchNumStr = queryString.parse(location.search).item;
     let searchNum = Number(searchNumStr);
-    if (!searchNum) searchNum = 1;
+    if (!searchNum) {
+      searchNum = 1;
+      history.push({ pathname: '/reader', search: '?item=1' });
+    }
     const searchIndex = searchNum - 1;
 
     return (
